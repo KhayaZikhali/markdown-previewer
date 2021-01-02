@@ -3,7 +3,7 @@
   height: auto;
   position: fixed;
   top:0%;
-  height: 100%;
+  height: 100vh;
   width:100vw;
 }
 
@@ -23,7 +23,7 @@ MARKDOWN DIV
 ===========================
 */
 .MarkDiv {
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: white;
   border-right: 3px solid black;
@@ -42,7 +42,6 @@ MARKDOWN TITLE
  text-align: center;
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  font-weight: bold;
- text-shadow:  2px 2px #ff0000;
 }
 
 /*
@@ -50,7 +49,7 @@ EDITOR TEXT AREA
 */
 
 .editor {
-  width: 95%;
+  width: 98%;
   height:100%;
   background-color:transparent;
   border: 0px;
@@ -68,26 +67,28 @@ PREVIEW DIV
 */
 
 .previewDiv {
-  width: 10%;
+  width: 100%;
   height: 99%;
   background-color: white;
   border-left: 3px solid black;
   justify-content: center;
   align-items: center;
-  z-index: 2;
-  margin-left: 45%;
 }
 
 /*
 Preview text area
 */
 .previewer {
-  width: 100%;
+  width: 98%;
   height:100%;
   background-color:transparent;
   border: 0px;
   outline: none;
   font-size:16px;
+  padding:10px;
+  text-shadow: 1p;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifsdfas ;
+  margin-right:30px;
 }
 
 /*
@@ -99,4 +100,23 @@ Preview title
   height: auto;
   border-bottom: 3px dotted grey;
   text-align: center; 
+}
+
+.left {
+  width:50%;
+  height:100%;
+  left:0;
+  justify-self:left;
+  margin:left;
+  background-color:white;
+  float:left;
+}
+
+.right {
+  width : 50;
+  height:100vh;
+  right:0;
+  justify-self:right;
+  margin-left:50%;
+
 }

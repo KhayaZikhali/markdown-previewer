@@ -16,7 +16,7 @@ class TextArea extends React.Component {
            <textarea className="editor"></textarea>
         </div>
      )
-  };    
+  };     
 }
 
 class PreviewArea extends React.Component {
@@ -27,7 +27,7 @@ class PreviewArea extends React.Component {
  render () {
      return (
         <div className="previewDiv">
-           <h1 className="previewTitle">MarkDown Area</h1>
+           <h1 className="previewTitle">Preview Area</h1>
            <textarea className="previewer"></textarea>
         </div>
      )

@@ -5,8 +5,12 @@ function App() {
   return (
     <div className="App">
        <h1 className="title">MARKDOWN PREVIEWER</h1>
-       <TextArea />
-       <PreviewArea />
+       <div className="left">
+         <TextArea/>
+       </div>
+       <div className="right">
+         <PreviewArea />
+       </div>
     </div>
   );
 }
