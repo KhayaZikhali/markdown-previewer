@@ -6,6 +6,22 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 function App() {
   const [input, setInput] = useState();
+  const markdown = `
+  # A Header
+
+  A paragraph with *emphasis* and **strong importance**.
+ 
+> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+ 
+* Lists
+* [ ] todo
+* [x] done
+ 
+A table:
+ 
+| a | b |
+| - | - |
+`
   return (
     <div className="App">
        <h1 className="title">MARKDOWN PREVIEWER</h1>
@@ -13,7 +29,7 @@ function App() {
         <div className="left">
         <div className="MarkDiv">
            <h1 className="markTitle">Input Area</h1>
-           <textarea className="editor" id="editor" value={input} onChange={(e)=>setInput(e.target.value)} ></textarea>
+           <textarea className="editor" id="editor" value={input} onChange={(e)=>setInput(e.target.value)} defaultValue={markdown} ></textarea>
         </div>
         </div>
         <div className="right">
